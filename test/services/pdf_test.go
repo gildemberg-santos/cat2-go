@@ -8,7 +8,7 @@ import (
 )
 
 func TestOpen(t *testing.T) {
-	new_pdf := services.ModelPDF{}
+	new_pdf := services.ExtractPDF{}
 	new_pdf.New("Test PDF File.pdf")
 	new_pdf.Open()
 	assert.Equal(t, "Test PDF File.pdf", new_pdf.FileName)

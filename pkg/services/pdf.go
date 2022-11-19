@@ -6,16 +6,16 @@ import (
 	"github.com/dslipak/pdf"
 )
 
-type ModelPDF struct {
+type ExtractPDF struct {
 	FileName string
 	Text     string
 }
 
-func (p *ModelPDF) New(filename string) {
+func (p *ExtractPDF) New(filename string) {
 	p.FileName = filename
 }
 
-func (p *ModelPDF) Open() {
+func (p *ExtractPDF) Open() {
 	content, err := pdf.Open(p.FileName)
 	if err != nil {
 		panic(err)
