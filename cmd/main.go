@@ -1,6 +1,6 @@
 package main
 
-import "legal-research-automation-go/internal/services"
+import "legal-research-automation-go/pkg/services"
 
 func main() {
 	new_pdf := services.ModelPDF{}

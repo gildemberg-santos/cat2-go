@@ -1,7 +1,7 @@
 package services_test
 
 import (
-	"legal-research-automation-go/internal/services"
+	"legal-research-automation-go/pkg/services"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
