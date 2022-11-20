@@ -7,12 +7,12 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestPDF(t *testing.T) {
-	filename := "Test PDF File.pdf"
-	pdfcontent := "Hello, World!"
-	new_pdf := services.ExtractPDF{}
+func TestTXT(t *testing.T) {
+	filename := "Test TXT File.txt"
+	txtconten := "Hello, World 2!"
+	new_pdf := services.ExtractTXT{}
 	new_pdf.New(filename)
 	new_pdf.Open()
 	assert.Equal(t, filename, new_pdf.FileName)
-	assert.Equal(t, pdfcontent, new_pdf.Text)
+	assert.Equal(t, txtconten, new_pdf.Text)
 }
