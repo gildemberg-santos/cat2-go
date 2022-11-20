@@ -9,7 +9,7 @@ import (
 
 func TestTXT(t *testing.T) {
 	filename := "Test TXT File.txt"
-	txtconten := "Hello, World 2!"
+	txtconten := "Hello, World 2!\n"
 	new_pdf := services.ExtractTXT{}
 	new_pdf.New(filename)
 	new_pdf.Open()

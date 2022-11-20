@@ -2,7 +2,6 @@ package services
 
 import (
 	"os"
-	"strings"
 )
 
 type ExtractTXT struct {
@@ -19,5 +18,5 @@ func (p *ExtractTXT) Open() {
 	if err != nil {
 		panic(err)
 	}
-	p.Text = strings.Replace(string(reader_bytes), "\n", "", -1)
+	p.Text = string(reader_bytes)
 }
