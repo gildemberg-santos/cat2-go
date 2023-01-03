@@ -1,4 +1,4 @@
-# extract-text-from-pdf-go
+# cat2-go
 Extrair texto de pdf
 
 ``` go
